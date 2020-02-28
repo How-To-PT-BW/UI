@@ -133,3 +133,71 @@ body .container {
   width: 95%;
   margin: 0 auto;
 }
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4.4rem;
+}
+header {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+header .company {
+  border: 1px solid green;
+  width: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+header .company img {
+  width: 25%;
+  margin: 1%;
+}
+header nav {
+  border: 1px solid blue;
+  width: 45%;
+}
+header nav a {
+  font-size: 1.8rem;
+}
+.title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h3 {
+  font-size: 2.8rem;
+}
+.dev {
+  border: 1px solid green;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dev .dev-team {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+}
+.dev .dev-team img {
+  border-radius: 50%;
+}
+.dev .dev-team h4 {
+  font-size: 2.4rem;
+}
+.dev .dev-team h5 {
+  font-size: 2rem;
+}
+.dev .dev-team .social img {
+  width: 25px;
+}
