@@ -25,6 +25,9 @@ header {
     nav {
         border: 1px solid blue;
         width: 45%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
         a {
             font-size: 1.8rem;
         }
@@ -46,25 +49,45 @@ header {
     justify-content: space-evenly;
     align-items: center;
     .dev-team {
-        border: 1px solid red;
+        border: 5px solid @darkGreen;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
         align-items: center;
-        width: 35%;
+        width: 15%;
+        background-color: #4989AE;
+        color: @offWhite;
         img {
             border-radius: 50%;
+            margin: 3%;
         }
         h4{
             font-size: 2.4rem;
+            margin: 2%;
+            text-align: center;
         }
         h5{
             font-size: 2rem;
         }
         .social {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2%;
             img {
                 width: 25px;
+                border-radius: 0%;
+                padding: 1%;
             }
         }
+    }
+}
+.contact {
+    border: 1px solid red;
+    h4 {
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: 1.8rem;
     }
 }

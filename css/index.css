@@ -161,6 +161,9 @@ header .company img {
 header nav {
   border: 1px solid blue;
   width: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 header nav a {
   font-size: 1.8rem;
@@ -182,22 +185,44 @@ header nav a {
   align-items: center;
 }
 .dev .dev-team {
-  border: 1px solid red;
+  border: 5px solid #36827E;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
-  width: 35%;
+  width: 15%;
+  background-color: #4989AE;
+  color: #F1F9F9;
 }
 .dev .dev-team img {
   border-radius: 50%;
+  margin: 3%;
 }
 .dev .dev-team h4 {
   font-size: 2.4rem;
+  margin: 2%;
+  text-align: center;
 }
 .dev .dev-team h5 {
   font-size: 2rem;
 }
+.dev .dev-team .social {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+}
 .dev .dev-team .social img {
   width: 25px;
+  border-radius: 0%;
+  padding: 1%;
+}
+.contact {
+  border: 1px solid red;
+}
+.contact h4 {
+  font-size: 2.4rem;
+}
+.contact p {
+  font-size: 1.8rem;
 }
