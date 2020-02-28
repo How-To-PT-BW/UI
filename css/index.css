@@ -139,6 +139,9 @@ html {
 h1 {
   font-size: 4.4rem;
 }
+a {
+  text-decoration: none;
+}
 header {
   border: 1px solid red;
   display: flex;
@@ -232,6 +235,9 @@ html {
 h1 {
   font-size: 4.4rem;
 }
+a {
+  text-decoration: none;
+}
 header {
   border: 1px solid red;
   display: flex;
@@ -269,4 +275,26 @@ header nav a {
 }
 .title h3 {
   font-size: 2.8rem;
+}
+.what-is {
+  border: 1px solid red;
+}
+.who-for {
+  border: 1px solid blue;
+}
+.button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #4989AE;
+  color: #F1F9F9;
+  border: 5px solid #36827E;
+  padding: 10px;
+  border-radius: 10px;
+  width: 15%;
+  margin: 5% auto;
+}
+.button h2 {
+  font-size: 3.3rem;
 }
