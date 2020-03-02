@@ -62,8 +62,11 @@
     } //search
 
     .creatorStudio {
+        background-image: url("../images/LG-Creator-Studio-Icon.png");
         background-color: @offWhite;
-        padding: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 2rem 1rem;
 
         h1 {
             .h2;
@@ -72,8 +75,11 @@
     } //creatorStudio
 
     .draft {
+        background-image: url("../images/LG-Draft-Article-Icon.png");
         background-color: #275E5B;
-        padding: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 2rem 1rem;
         color: #fff;
 
         h1 {
@@ -92,8 +98,17 @@
 
         .criteria {
             .flex;
+            font-size: @babyFont;
+            color: #fff;
             justify-content: space-around;
+            padding: 1rem;
 
+            h1 {
+                background-color: @macAndCheese;
+                border-radius: 20px;
+                padding: .5rem;
+                width: 10rem;
+            }
         }
 
         .topics {

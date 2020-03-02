@@ -209,8 +209,11 @@ table {
   font-size: 0.7rem;
 }
 .container .creatorStudio {
+  background-image: url("../images/LG-Creator-Studio-Icon.png");
   background-color: #F1F9F9;
-  padding: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
 }
 .container .creatorStudio h1 {
   font-size: 2.56rem;
@@ -218,8 +221,11 @@ table {
   margin: 2rem 0 1rem 0;
 }
 .container .draft {
+  background-image: url("../images/LG-Draft-Article-Icon.png");
   background-color: #275E5B;
-  padding: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
   color: #fff;
 }
 .container .draft h1 {
@@ -235,7 +241,16 @@ table {
 }
 .container .macroSearch .criteria {
   display: flex;
+  font-size: 1.04rem;
+  color: #fff;
   justify-content: space-around;
+  padding: 1rem;
+}
+.container .macroSearch .criteria h1 {
+  background-color: #FDBA77;
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 10rem;
 }
 .container .macroSearch .topics {
   display: flex;
