@@ -261,3 +261,20 @@ table {
 .container .macroSearch .topics .searchBoxes {
   width: calc(50% - 1.2em);
 }
+.container footer {
+  background-color: #36827E;
+  color: #F1F9F9;
+  padding: 0.7rem 0 0.2rem 0;
+}
+.container footer p {
+  padding: 0.4rem 0;
+  font-size: 1.04rem;
+}
+.container footer #studioIcon {
+  position: absolute;
+  right: 90%;
+}
+.container footer #draftIcon {
+  position: absolute;
+  left: 90%;
+}
