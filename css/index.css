@@ -171,14 +171,17 @@ table {
 }
 .container .welcome {
   background-color: #F1F9F9;
+  padding-bottom: 0.8rem;
 }
 .container .welcome h1 {
   font-size: 2.24rem;
   font-style: bold;
-  padding: 2.5rem;
+  color: #2A4565;
+  padding: 2rem;
 }
 .container .welcome .headline {
-  margin-bottom: 2rem;
+  color: #2A4565;
+  margin: 0 2rem 2rem 2rem;
 }
 .container .welcome p:last-child {
   font-size: 0.7rem;
@@ -188,7 +191,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 75%;
+  width: 85%;
   height: 1.4rem;
   border-radius: 10rem;
   margin: 0 auto;
@@ -203,10 +206,14 @@ table {
   color: #E6EDF4;
 }
 .container .search textarea {
-  margin: 0.5rem 0;
+  width: 85%;
+  height: 1.6rem;
+  border-radius: 10rem;
+  margin: 0.5rem;
 }
 .container .search p:last-child {
   font-size: 0.7rem;
+  margin-left: 40%;
 }
 .container .creatorStudio {
   background-image: url("../images/LG-Creator-Studio-Icon.png");
@@ -242,24 +249,31 @@ table {
 .container .macroSearch .criteria {
   display: flex;
   font-size: 1.04rem;
-  color: #fff;
+  color: #2A4565;
   justify-content: space-around;
   padding: 1rem;
 }
 .container .macroSearch .criteria h1 {
+  width: 10rem;
+  padding: 0.5rem;
+}
+.container .macroSearch .criteria .active {
   background-color: #FDBA77;
   border-radius: 20px;
-  padding: 0.5rem;
-  width: 10rem;
+  color: #fff;
 }
 .container .macroSearch .topics {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0.5rem;
+  padding: 0.5rem;
 }
 .container .macroSearch .topics .searchBoxes {
   width: calc(50% - 1.2em);
+  margin: 0.5rem 0 0.5rem 0;
+}
+.container .macroSearch .topics .searchBoxes p {
+  font-size: 13px;
 }
 .container footer {
   background-color: #36827E;
@@ -272,9 +286,9 @@ table {
 }
 .container footer #studioIcon {
   position: absolute;
-  right: 90%;
+  right: 88%;
 }
 .container footer #draftIcon {
   position: absolute;
-  left: 90%;
+  left: 88%;
 }
