@@ -6,15 +6,15 @@ a {
 }
 header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
     width: 75%;
     margin: 1% auto;
     .company {
         width: 35%;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         align-items: center;
         img {
             width: 25%;
@@ -25,20 +25,20 @@ header {
         }
     }
     nav {
-        border: 1px solid red;
-        width: 100vw;
+        width: 100%;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        // flex-flow: row wrap;
+        justify-content: space-evenly;
         a {
             font-size: 1.8rem;
             color: @darkGreen;
-            padding: 2% 4%;
-            margin: 0%;
+            padding: 12px 14px !important;
             border: 1px solid @darkGreen;
             background-color: #4989AE;
             color: @offWhite;
             border-radius: 10px;
+            width: auto;
+            margin: 0;
         }
     }
     @media screen and (max-width: 1000px) {
@@ -81,6 +81,7 @@ header {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
     h3 {
         font-size: 2.8rem;
     }
