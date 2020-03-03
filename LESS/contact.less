@@ -7,35 +7,7 @@ h1 {
 a {
     text-decoration: none;
 }
-header {
-    border: 1px solid red;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    .company {
-        border: 1px solid green;
-        width: 45%;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        img {
-            width: 25%;
-            margin: 1%;
-        }
-    }
-    nav {
-        border: 1px solid blue;
-        width: 45%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        a {
-            font-size: 1.8rem;
-        }
-    }
-}
+
 .title{
     display: flex;
     flex-flow: column;
@@ -46,20 +18,36 @@ header {
     }
 }
 .dev {
-    border: 1px solid green;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    width: 75%;
+    margin: 2% auto;
+    @media screen and (max-width: 1000px) {
+        border: 1px solid red;
+        width: 85%;
+    }
+    @media screen and (max-width: 500px) {
+        flex-flow: column;
+        width: 90%;
+    }
     .dev-team {
         border: 5px solid @darkGreen;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
         align-items: center;
-        width: 15%;
+        width: 25%;
+        margin: 2% auto;
         background-color: #4989AE;
         color: @offWhite;
+        @media screen and (max-width: 1000px) {
+            width: 45%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 75%;
+        }
         img {
             border-radius: 50%;
             margin: 3%;
@@ -87,6 +75,8 @@ header {
 }
 .contact {
     border: 1px solid red;
+    width: 75%;
+    margin: auto;
     h4 {
         font-size: 2.4rem;
     }

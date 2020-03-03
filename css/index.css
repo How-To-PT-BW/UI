@@ -175,35 +175,6 @@ h1 {
 a {
   text-decoration: none;
 }
-header {
-  border: 1px solid red;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
-}
-header .company {
-  border: 1px solid green;
-  width: 45%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-header .company img {
-  width: 25%;
-  margin: 1%;
-}
-header nav {
-  border: 1px solid blue;
-  width: 45%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-header nav a {
-  font-size: 1.8rem;
-}
 .title {
   display: flex;
   flex-flow: column;
@@ -214,11 +185,24 @@ header nav a {
   font-size: 2.8rem;
 }
 .dev {
-  border: 1px solid green;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  width: 75%;
+  margin: 2% auto;
+}
+@media screen and (max-width: 1000px) {
+  .dev {
+    border: 1px solid red;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dev {
+    flex-flow: column;
+    width: 90%;
+  }
 }
 .dev .dev-team {
   border: 5px solid #36827E;
@@ -226,9 +210,20 @@ header nav a {
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
-  width: 15%;
+  width: 25%;
+  margin: 2% auto;
   background-color: #4989AE;
   color: #F1F9F9;
+}
+@media screen and (max-width: 1000px) {
+  .dev .dev-team {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dev .dev-team {
+    width: 75%;
+  }
 }
 .dev .dev-team img {
   border-radius: 50%;
@@ -255,6 +250,8 @@ header nav a {
 }
 .contact {
   border: 1px solid red;
+  width: 75%;
+  margin: auto;
 }
 .contact h4 {
   font-size: 2.4rem;
@@ -262,11 +259,9 @@ header nav a {
 .contact p {
   font-size: 1.8rem;
 }
-html {
-  font-size: 62.5%;
-}
 h1 {
-  font-size: 4.4rem;
+  font-size: 3.52rem;
+  font-style: bold;
 }
 a {
   text-decoration: none;
@@ -277,7 +272,8 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: auto;
+  width: 75%;
+  margin: 1% auto;
 }
 header .company {
   border: 1px solid green;
@@ -290,6 +286,9 @@ header .company img {
   width: 25%;
   margin: 1%;
 }
+header .company h1 {
+  margin: 10%;
+}
 header nav {
   border: 1px solid blue;
   width: 45%;
@@ -299,6 +298,32 @@ header nav {
 }
 header nav a {
   font-size: 1.8rem;
+  color: #36827E;
+}
+@media screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    width: 90%;
+  }
+  header .company {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .company img {
+    width: 50%;
+  }
+  header nav {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .title {
   display: flex;
@@ -310,12 +335,79 @@ header nav a {
   font-size: 2.8rem;
 }
 .what-is {
-  border: 1px solid red;
+  border: 1px solid blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+}
+.what-is img {
+  width: 15%;
+}
+.what-is .text {
+  border: 1px solid violet;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin: 1% 5%;
+}
+.what-is .text h3 {
+  font-size: 2.24rem;
+  font-style: bold;
+}
+.what-is .text p {
+  font-size: 1.44rem;
+}
+@media screen and (max-width: 1000px) {
+  .what-is {
+    flex-flow: column wrap;
+  }
 }
 .who-for {
   border: 1px solid blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
 }
-.button {
+.who-for img {
+  width: 15%;
+}
+.who-for .text {
+  border: 1px solid violet;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin: 1% 5%;
+}
+.who-for .text h3 {
+  font-size: 2.24rem;
+  font-style: bold;
+}
+.who-for .text p {
+  font-size: 1.44rem;
+}
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 2% auto;
+  border: 1px solid orangered;
+}
+.links .button {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.links .button a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -325,9 +417,11 @@ header nav a {
   border: 5px solid #36827E;
   padding: 10px;
   border-radius: 10px;
-  width: 15%;
-  margin: 5% auto;
+  margin: 2% auto;
 }
-.button h2 {
+.links .button a h2 {
   font-size: 3.3rem;
+}
+.links .button p {
+  font-size: 1.44rem;
 }

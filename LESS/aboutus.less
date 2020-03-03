@@ -1,8 +1,5 @@
-html {
-    font-size: 62.5%;
-}
 h1 {
-    font-size: 4.4rem;
+    .h1();
 }
 a {
     text-decoration: none;
@@ -13,7 +10,8 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    width: auto;
+    width: 75%;
+    margin: 1% auto;
     .company {
         border: 1px solid green;
         width: 45%;
@@ -24,6 +22,9 @@ header {
             width: 25%;
             margin: 1%;
         }
+        h1 {
+            margin: 10%;
+        }
     }
     nav {
         border: 1px solid blue;
@@ -33,6 +34,28 @@ header {
         justify-content: space-around;
         a {
             font-size: 1.8rem;
+            color: @darkGreen;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        flex-flow: column wrap;
+        width: 85%;
+    }
+    @media (max-width: 500px){
+        width: 90%;
+        .company{
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%
+            }
+        }
+        nav {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -46,24 +69,90 @@ header {
     }
 }
 .what-is {
-    border: 1px solid red;
-}
-.who-for{
     border: 1px solid blue;
-}
-.button {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: auto;
+    img {
+        width: 15%;
+    }
+    .text {
+        border: 1px solid violet;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        margin: 1% 5%;
+        h3 {
+            .h3();
+        }
+        p{
+            font-size: @p;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        flex-flow: column wrap;
+    }
+    
+}
+.who-for{
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    img {
+        width: 15%;
+    }
+    .text {
+        border: 1px solid violet;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        margin: 1% 5%;
+        h3 {
+            .h3();
+        }
+        p{
+            font-size: @p;
+        }
+    }
+}
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
-    background-color: #4989AE;
-    color: @offWhite;
-    border: 5px solid @darkGreen;
-    padding: 10px;
-    border-radius: 10px;
-    width: 15%;
-    margin: 5% auto;
-    h2 {
-        font-size: 3.3rem;
+    width: 50%;
+    margin: 2% auto;
+    border: 1px solid orangered;
+    .button {
+        border: 1px solid red;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #4989AE;
+            color: @offWhite;
+            border: 5px solid @darkGreen;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 2% auto;
+            h2 {
+                font-size: 3.3rem;
+            }
+        }
+        p {
+            font-size: @p;
+        }
     }
 }
