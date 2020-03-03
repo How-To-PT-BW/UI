@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+nav {
+  margin: 0%;
+}
 .font {
   font-family: "Martel", serif;
 }
@@ -166,99 +169,6 @@ table {
 .container .welcome p {
   padding: 0.5rem;
 }
-html {
-  font-size: 62.5%;
-}
-h1 {
-  font-size: 4.4rem;
-}
-a {
-  text-decoration: none;
-}
-.title {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-.title h3 {
-  font-size: 2.8rem;
-}
-.dev {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 75%;
-  margin: 2% auto;
-}
-@media screen and (max-width: 1000px) {
-  .dev {
-    border: 1px solid red;
-    width: 85%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .dev {
-    flex-flow: column;
-    width: 90%;
-  }
-}
-.dev .dev-team {
-  border: 5px solid #36827E;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 25%;
-  margin: 2% auto;
-  background-color: #4989AE;
-  color: #F1F9F9;
-}
-@media screen and (max-width: 1000px) {
-  .dev .dev-team {
-    width: 45%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .dev .dev-team {
-    width: 75%;
-  }
-}
-.dev .dev-team img {
-  border-radius: 50%;
-  margin: 3%;
-}
-.dev .dev-team h4 {
-  font-size: 2.4rem;
-  margin: 2%;
-  text-align: center;
-}
-.dev .dev-team h5 {
-  font-size: 2rem;
-}
-.dev .dev-team .social {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 2%;
-}
-.dev .dev-team .social img {
-  width: 25px;
-  border-radius: 0%;
-  padding: 1%;
-}
-.contact {
-  border: 1px solid red;
-  width: 75%;
-  margin: auto;
-}
-.contact h4 {
-  font-size: 2.4rem;
-}
-.contact p {
-  font-size: 1.8rem;
-}
 h1 {
   font-size: 3.52rem;
   font-style: bold;
@@ -267,7 +177,6 @@ a {
   text-decoration: none;
 }
 header {
-  border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -276,8 +185,7 @@ header {
   margin: 1% auto;
 }
 header .company {
-  border: 1px solid green;
-  width: 45%;
+  width: 35%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -290,8 +198,8 @@ header .company h1 {
   margin: 10%;
 }
 header nav {
-  border: 1px solid blue;
-  width: 45%;
+  border: 1px solid red;
+  width: 100vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -299,12 +207,27 @@ header nav {
 header nav a {
   font-size: 1.8rem;
   color: #36827E;
+  padding: 2% 4%;
+  margin: 0%;
+  border: 1px solid #36827E;
+  background-color: #4989AE;
+  color: #F1F9F9;
+  border-radius: 10px;
 }
 @media screen and (max-width: 1000px) {
   header {
     display: flex;
     flex-flow: column wrap;
     width: 85%;
+  }
+  header .company h1 {
+    margin-left: 20%;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav a {
+    margin: 2%;
   }
 }
 @media (max-width: 500px) {
@@ -315,6 +238,7 @@ header nav a {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 75%;
   }
   header .company img {
     width: 50%;
@@ -323,6 +247,7 @@ header nav a {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 7%;
   }
 }
 .title {
@@ -424,4 +349,100 @@ header nav a {
 }
 .links .button p {
   font-size: 1.44rem;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4.4rem;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h3 {
+  font-size: 2.8rem;
+}
+.dev {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  margin: 2% auto;
+}
+@media screen and (max-width: 1000px) {
+  .dev {
+    border: 1px solid red;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dev {
+    flex-flow: column;
+    width: 90%;
+  }
+}
+.dev .dev-team {
+  border: 5px solid #36827E;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  margin: 2% auto;
+  background-color: #4989AE;
+  color: #F1F9F9;
+}
+@media screen and (max-width: 1000px) {
+  .dev .dev-team {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dev .dev-team {
+    width: 75%;
+  }
+}
+.dev .dev-team img {
+  border-radius: 50%;
+  margin: 3%;
+}
+.dev .dev-team h4 {
+  font-size: 2.4rem;
+  margin: 2%;
+  text-align: center;
+}
+.dev .dev-team h5 {
+  font-size: 2rem;
+}
+.dev .dev-team .social {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.dev .dev-team .social img {
+  width: 25px;
+  border-radius: 0%;
+  padding: 1%;
+}
+.contact {
+  border: 1px solid red;
+  width: 75%;
+  margin: auto;
+}
+.contact h4 {
+  font-size: 2.4rem;
+}
+.contact p {
+  font-size: 1.8rem;
+}
+a {
+  margin: 0%;
 }

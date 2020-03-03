@@ -5,7 +5,6 @@ a {
     text-decoration: none;
 }
 header {
-    border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -13,8 +12,7 @@ header {
     width: 75%;
     margin: 1% auto;
     .company {
-        border: 1px solid green;
-        width: 45%;
+        width: 35%;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
@@ -27,20 +25,37 @@ header {
         }
     }
     nav {
-        border: 1px solid blue;
-        width: 45%;
+        border: 1px solid red;
+        width: 100vw;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         a {
             font-size: 1.8rem;
             color: @darkGreen;
+            padding: 2% 4%;
+            margin: 0%;
+            border: 1px solid @darkGreen;
+            background-color: #4989AE;
+            color: @offWhite;
+            border-radius: 10px;
         }
     }
     @media screen and (max-width: 1000px) {
         display: flex;
         flex-flow: column wrap;
         width: 85%;
+        .company {
+            h1{
+                margin-left: 20%;
+            }
+        }
+        nav {
+            width: 100%;
+            a{
+                margin: 2%;
+            }
+        }
     }
     @media (max-width: 500px){
         width: 90%;
@@ -48,6 +63,7 @@ header {
             flex-flow: column;
             justify-content: center;
             align-items: center;
+            width: 75%;
             img {
                 width: 50%
             }
@@ -56,6 +72,7 @@ header {
             flex-flow: column;
             justify-content: center;
             align-items: center;
+            margin-bottom: 7%;
         }
     }
 }
@@ -95,7 +112,7 @@ header {
     @media screen and (max-width: 1000px) {
         flex-flow: column wrap;
     }
-    
+
 }
 .who-for{
     border: 1px solid blue;
