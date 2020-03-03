@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-nav {
-  margin: 0%;
-}
 .font {
   font-family: "Martel", serif;
 }
@@ -443,6 +440,6 @@ a {
 .contact p {
   font-size: 1.8rem;
 }
-a {
-  margin: 0%;
+#a {
+  margin: 1px;
 }
