@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -297,38 +300,59 @@ table {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: #F1F9F9;
 }
-.container h1 {
-  font-size: 1.92rem;
-  font-style: normal;
-  padding: 0.5rem 0;
+.container .intro,
+.container .instructionSteps {
+  padding: 0 0.5rem;
 }
-.container p {
-  padding: 0.5rem 0;
+/************ Slideshow container *****************/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+  border: 2px solid #36827E;
+  border-raddius: 20px;
 }
-.container header {
-  background-color: #36827E;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
-.container header h1 {
-  padding: 0.5rem 0;
-  font-size: 1.44rem;
-  color: #F1F9F9;
-}
-.container footer {
-  background-color: #36827E;
-  color: #F1F9F9;
-  padding: 0.7rem 0 0.2rem 0;
-}
-.container footer p {
-  padding: 0.4rem 0;
-  font-size: 1.04rem;
-}
-.container footer #studioIcon {
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  right: 88%;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.container footer #draftIcon {
-  position: absolute;
-  left: 88%;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
 }
