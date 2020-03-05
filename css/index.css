@@ -295,6 +295,14 @@ a {
     width: 250px;
   }
 }
+@media screen and (max-width: 500px) {
+  .what-is img {
+    margin: 5% auto;
+  }
+  .what-is .text {
+    margin: 5% auto;
+  }
+}
 .who-for {
   display: flex;
   flex-flow: row wrap;
@@ -333,6 +341,17 @@ a {
   }
   .who-for .text {
     width: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .who-for {
+    flex-flow: column-reverse;
+  }
+  .who-for img {
+    margin: 5% auto;
+  }
+  .who-for .text {
+    margin: 5% auto;
   }
 }
 .links {
