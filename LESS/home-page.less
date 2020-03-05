@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    
+
 
     header {
         background-color: @darkGreen;
@@ -48,6 +48,10 @@
             background-color: @macAndCheese;
             vertical-align: middle;
             margin-bottom: .5rem;
+
+                @media @desktop {
+                    width: 20%;
+                }
         }
     } // welcome
 
@@ -63,6 +67,10 @@
             height: 2.5rem;
             border-radius: 10rem;
             margin: .5rem;
+
+                @media @desktop {
+                    width: 20%;
+                }
         }
 
         p:last-child {
@@ -134,6 +142,10 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: .5rem;
+
+                @media @desktop {
+                    justify-content: center;
+                }
             
 
             .searchBoxes {
@@ -146,47 +158,40 @@
             }
         }//topics
     }//macroSearch
-
-    footer {
-        background-color: @darkGreen;
-        color: @offWhite;
-        padding: .7rem 0 0.2rem 0;
-        
-
-        @media @tablet {
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom: 0;
-        }
-
-        h1 {
-            font-size: @p;
-        }
-
-        p {
-            padding: 0.4rem 0;
-            font-size: @babyFont;
-        }
-
-        #studioIcon {
-            position: absolute;
-            right: 88%;
-
-                @media @desktop {
-                    right: 68%;
-                }
-        }
-
-        #draftIcon {
-            position: absolute;
-            left: 88%;
-
-                @media @desktop {
-                    left: 68%;
-                }
-            }
-    }//footer
 } //container
+
+footer {
+    background-color: @darkGreen;
+    color: @offWhite;
+    padding: .7rem 0 0.2rem 0;
+    text-align: center;
+
+    h1 {
+        font-size: @p;
+    }
+
+    p {
+        padding: 0.4rem 0;
+        font-size: @babyFont;
+    }
+
+    #studioIcon {
+        position: absolute;
+        right: 88%;
+
+            @media @desktop {
+                right: 68%;
+            }
+    }
+
+    #draftIcon {
+        position: absolute;
+        left: 88%;
+
+            @media @desktop {
+                left: 68%;
+            }
+        }
+}//footer
 
 

@@ -207,6 +207,11 @@ table {
   vertical-align: middle;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 1025px) {
+  .container .welcome .button {
+    width: 20%;
+  }
+}
 .container .search {
   font-size: 1.44rem;
   padding: 1.5rem;
@@ -218,6 +223,11 @@ table {
   height: 2.5rem;
   border-radius: 10rem;
   margin: 0.5rem;
+}
+@media (min-width: 1025px) {
+  .container .search textarea {
+    width: 20%;
+  }
 }
 .container .search p:last-child {
   font-size: 1rem;
@@ -280,6 +290,11 @@ table {
   justify-content: space-around;
   padding: 0.5rem;
 }
+@media (min-width: 1025px) {
+  .container .macroSearch .topics {
+    justify-content: center;
+  }
+}
 .container .macroSearch .topics .searchBoxes {
   width: calc(50% - 1.2em);
   margin: 1rem 0 1rem 0;
@@ -287,41 +302,34 @@ table {
 .container .macroSearch .topics .searchBoxes p {
   font-size: 13px;
 }
-.container footer {
+footer {
   background-color: #36827E;
   color: #F1F9F9;
   padding: 0.7rem 0 0.2rem 0;
+  text-align: center;
 }
-@media (min-width: 501px) and (max-width: 1024px) {
-  .container footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-}
-.container footer h1 {
+footer h1 {
   font-size: 1.44rem;
 }
-.container footer p {
+footer p {
   padding: 0.4rem 0;
   font-size: 1.04rem;
 }
-.container footer #studioIcon {
+footer #studioIcon {
   position: absolute;
   right: 88%;
 }
 @media (min-width: 1025px) {
-  .container footer #studioIcon {
+  footer #studioIcon {
     right: 68%;
   }
 }
-.container footer #draftIcon {
+footer #draftIcon {
   position: absolute;
   left: 88%;
 }
 @media (min-width: 1025px) {
-  .container footer #draftIcon {
+  footer #draftIcon {
     left: 68%;
   }
 }
@@ -757,7 +765,7 @@ a {
   color: #2A4565;
   background-color: #F1F9F9;
   vertical-align: middle;
-  margin: 1rem auto;
+  margin: 4rem auto;
 }
 @media (min-width: 1025px) {
   .container .instructionSteps .button {
