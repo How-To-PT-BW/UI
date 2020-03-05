@@ -243,6 +243,11 @@ table {
   font-size: 1rem;
   margin-left: 40%;
 }
+@media (min-width: 1025px) {
+  .container .search p:last-child {
+    margin-left: 15%;
+  }
+}
 .container .creatorStudio {
   background-image: url("../images/LG-Creator-Studio-Icon.png");
   background-color: #F1F9F9;
