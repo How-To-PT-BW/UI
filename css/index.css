@@ -175,8 +175,13 @@ table {
   font-size: 1.44rem;
   color: #F1F9F9;
 }
+.container header .otherNav {
+  position: static;
+  background-color: #36827E;
+  justify-content: space-around;
+}
 .container .welcome {
-  background-color: #F1F9F9;
+  background-color: #fff;
   padding-bottom: 1rem;
   font-size: 1.44rem;
 }
@@ -250,7 +255,7 @@ table {
 }
 .container .creatorStudio {
   background-image: url("../images/LG-Creator-Studio-Icon.png");
-  background-color: #F1F9F9;
+  background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   color: #2A4565;
@@ -280,7 +285,7 @@ table {
   padding: 0.5rem 0;
 }
 .container .macroSearch {
-  background-color: #F1F9F9;
+  background-color: #fff;
 }
 .container .macroSearch .criteria {
   display: flex;
@@ -690,6 +695,11 @@ a {
   .container p {
     margin: 0 8rem;
   }
+}
+.container .otherNav {
+  position: static;
+  background-color: #36827E;
+  justify-content: space-around;
 }
 .container .intro {
   padding: 0 0.5rem;
