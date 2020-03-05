@@ -186,6 +186,7 @@ header .company img {
 }
 header .company h1 {
   margin: 10% 0% 0% 0%;
+  color: #2A4565;
 }
 header nav {
   width: 100%;
@@ -236,6 +237,17 @@ header nav a {
     margin-bottom: 7%;
   }
 }
+.title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  color: #2A4565;
+}
+.title h2 {
+  font-size: 3rem;
+}
 h1 {
   font-size: 3.52rem;
   font-style: bold;
@@ -243,72 +255,85 @@ h1 {
 a {
   text-decoration: none;
 }
-.title {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-}
-.title h3 {
-  font-size: 2.8rem;
-}
 .what-is {
-  border: 1px solid blue;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: auto;
+  width: 50%;
 }
 .what-is img {
-  width: 15%;
+  width: 250px;
 }
 .what-is .text {
-  border: 1px solid violet;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 250px;
   margin: 1% 5%;
 }
 .what-is .text h3 {
   font-size: 2.24rem;
   font-style: bold;
+  margin: 5%;
 }
 .what-is .text p {
   font-size: 1.44rem;
 }
 @media screen and (max-width: 1000px) {
   .what-is {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .what-is img {
+    width: 250px;
+  }
+  .what-is .text {
+    width: 250px;
   }
 }
 .who-for {
-  border: 1px solid blue;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: auto;
+  width: 50%;
 }
 .who-for img {
-  width: 15%;
+  width: 250px;
 }
 .who-for .text {
-  border: 1px solid violet;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 250px;
   margin: 1% 5%;
 }
 .who-for .text h3 {
   font-size: 2.24rem;
   font-style: bold;
+  margin: 5%;
 }
 .who-for .text p {
   font-size: 1.44rem;
+}
+@media screen and (max-width: 1000px) {
+  .who-for {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .who-for img {
+    width: 250px;
+  }
+  .who-for .text {
+    width: 250px;
+  }
 }
 .links {
   display: flex;
@@ -317,10 +342,8 @@ a {
   align-items: center;
   width: 50%;
   margin: 2% auto;
-  border: 1px solid orangered;
 }
 .links .button {
-  border: 1px solid red;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -344,6 +367,13 @@ a {
 .links .button p {
   font-size: 1.44rem;
 }
+@media screen and (max-width: 1000px) {
+  .links {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -352,15 +382,6 @@ h1 {
 }
 a {
   text-decoration: none;
-}
-.title {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-.title h3 {
-  font-size: 2.8rem;
 }
 .dev {
   display: flex;
