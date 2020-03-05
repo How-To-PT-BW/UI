@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>How-to crochet a baby Yoda</title>
+</head>
+<div class="container">
+    <body>
+        <header>
+            <h1>How-To</h1>
+            <nav></nav>
+        </header>
+            <section class="intro">
+                <img src="images/onePageIcon.png" alt="Picture of a 1 with up and down arrows"><h1>Crochet a Baby Yoda</h1><img src="images/printIcon.png" alt="Illustration of a printer">
+                <p>Problem: Official dolls of "The Child" won't be available until Spring 2020, and your kid (or you) need one now.</p>
+                <p>Solution: Follow the below steps and the attached pattern to make a little 50-year old treasure of your own.</p>
+                <p>I have spoken.</p>
+            </section>
+            <section class="instructionSteps">
+                <section class="step1">
+                    <h1>Step One:<br>Body</h1>
+
+                    <div class="wrap">
+                        <div id="arrow-left" class="arrow"></div>
+                        <div id="slider">
+                          
+                          <div class="slide slide1">
+                            <div class="slide-content">
+                            </div><!-- slide-content -->
+                          </div><!-- slide1 -->
+                          
+                          <div class="slide slide2">
+                            <div class="slide-content">
+                            </div><!-- slide-content -->
+                          </div><!-- slide2 -->
+                          
+                          <div class="slide slide3">
+                            <div class="slide-content">
+                            </div><!-- slide-content -->
+                          </div><!-- slide3 -->
+                          
+                        </div><!-- slider -->
+                        <div id="arrow-right" class="arrow"></div>
+                      </div>
+
+
+                    <p>There are plenty of different ways you could hold a crochet hook and yarn, but most of the time, crocheters fall into either of two groups: the pencil grippers and the knife grippers. Learn how each method works, as well as how to hold a Tunisian crochet hook.</p> 
+                    <p>As you try out these grips, keep in mind that these are only the most common ways of working. There are lots of possibilities and variations, so if they don't work for you, keep trying different things to see what's most comfortable for you.</p>
+                    <p>When you hold your crochet hook in much the same way you'd hold a pencil or pen, it's called the "pencil grip." The pencil grip gives you the same type of control as you would have when writing with a pencil or pen, or when painting with a paintbrush.</p>
+                    <p>In this method, the hook typically works from above and goes down into the stitches.</p> 
+                </section>
+                <button>Next Step</button>
+            </section>
+
+        <script>
+            let sliderImages = document.querySelectorAll(".slide");
+            let arrowLeft = document.querySelector("#arrow-left");
+            let arrowRight = document.querySelector("#arrow-right");
+            let current = 0;
+            
+            
+            // Clear all images
+            function reset(){
+              for(let i = 0; i < sliderImages.length; i++) {
+                sliderImages[i].style.display = 'none';
+              }
+            }
+            
+            // Initializes Slider
+            function startSlide(){
+              reset();
+              sliderImages[0].style.display = 'block';
+            }
+            
+            // Show Previous
+            function slideLeft(){
+              reset();
+              sliderImages[current - 1].style.display = 'block';
+              current--;
+            }
+            
+            // Show Next
+            function slideRight(){
+              reset();
+              sliderImages[current + 1].style.display = 'block';
+              current++;
+            }
+            
+            // Right arrow click
+            arrowRight.addEventListener('click', function(){
+              if(current === sliderImages.length - 1){
+                current = -1
+              }
+              slideRight();
+            });
+            
+            
+            // Left arrow click
+            arrowLeft.addEventListener('click', function() {
+              if(current === 0){
+                  current = sliderImages.length;
+                 }
+              slideLeft();
+            });
+            
+            startSlide();
+              
+            </script>
+    </body>
+    <footer>
+        <img src="images/studioIcon.png" id="studioIcon" alt="Illustration of a desk and desktop"><img src="images/draftArticleIcon.png" id="draftIcon" alt="Illustration of a calligraphy pen point">
+        <h1>HOW TO: LAND A DRONE</h1>
+        <p>Featured Article</p>
+    </footer>
+</div><!--container-->
+</html>
