@@ -10,6 +10,10 @@
 
     p {
         font-size: @p;
+
+        @media @tablet {
+            margin: 0 8rem;
+        }
     }
 
     .intro {
@@ -20,6 +24,11 @@
             height: auto;
             position: absolute;
             right: 88%;
+
+            @media @tablet {
+                width: 5%;
+                right: 68%;
+            }
         }
 
         #rightIcon {
@@ -27,6 +36,11 @@
             height: auto;
             position: absolute;
             left: 88%;
+
+            @media @tablet {
+                width: 5%;
+                left: 68%;
+            }
         }
 
         h1 {
@@ -53,6 +67,10 @@
             #progressBar1 {
                 width: 75%;
                 margin: 2.5rem 0;
+
+                @media @tablet {
+                    width: 35%;
+                }
             
             }
 
@@ -87,6 +105,11 @@
     width: 100%;
     height: 214px;
     overflow-x: hidden;
+
+    @media @tablet {
+        width: 75%;
+        margin: 0 auto;
+    }
   }
   
   .wrap{position: relative}
