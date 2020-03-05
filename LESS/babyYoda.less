@@ -4,16 +4,58 @@
     margin: 0 auto;
     text-align: center;
 
-    .intro,
+    h1 {
+        .h2;
+    }
+
+    p {
+        font-size: @p;
+    }
+
+    .intro {
+        padding: 0 0.5rem;
+
+        #leftIcon {
+            width: 10%;
+            height: auto;
+            position: absolute;
+            right: 88%;
+        }
+
+        #rightIcon {
+            width: 10%;
+            height: auto;
+            position: absolute;
+            left: 88%;
+        }
+
+        h1 {
+            padding: 1rem 0;
+            margin: 1rem 0;
+        }
+
+        p {
+            padding: 1rem;
+        }
+
+        p:last-child {
+            .endOfSection;
+        }
+    }// Intro
+
     .instructionSteps {
         padding: 0 0.5rem;
-    }
-} 
+
+            p {
+                padding: 1rem;
+            }
+    }// Instruction Steps
 
 
 
-/************ Slideshow container *****************/
-#slider, .wrap, .slide-content {
+
+    /************ Slideshow container *****************/
+    #slider, .wrap, .slide-content {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,25 +80,34 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    margin-top: -35px;
+    margin-top: -15px;
     width: 0;
     height: 0;
     border-style: solid;
   }
   
   #arrow-left{
-    border-width: 30px 40px 30px 0;
+    border-width: 10px 20px 10px 0;
     left: 0;
-    margin-left: 30px;
-    border-color: transparent white transparent transparent;
+    margin-left: 20px;
+    border-color: transparent @darkGreen transparent transparent;
   }
   
   #arrow-right{
-    border-width: 30px 0 30px 40px;
+    border-width: 10px 0 10px 20px;
     right: 0;
-    margin-right: 30px;
-    border-color: transparent transparent transparent white;
+    margin-right: 20px;
+    border-color: transparent transparent transparent @darkGreen;
   }
+
+
+
+
+}// Container 
+
+
+
+
 
 
 

@@ -155,6 +155,9 @@ table {
 .comfortPadding {
   padding: 0.5rem 0;
 }
+.endOfSection {
+  padding: 2rem;
+}
 .flex {
   display: flex;
 }
@@ -288,6 +291,9 @@ table {
   background-color: #36827E;
   color: #F1F9F9;
   padding: 0.7rem 0 0.2rem 0;
+}
+.container footer h1 {
+  font-size: 1.44rem;
 }
 .container footer p {
   padding: 0.4rem 0;
@@ -625,15 +631,49 @@ a {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  /************ Slideshow container *****************/
 }
-.container .intro,
+.container h1 {
+  font-size: 2.56rem;
+  font-style: normal;
+}
+.container p {
+  font-size: 1.44rem;
+}
+.container .intro {
+  padding: 0 0.5rem;
+}
+.container .intro #leftIcon {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  right: 88%;
+}
+.container .intro #rightIcon {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  left: 88%;
+}
+.container .intro h1 {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+.container .intro p {
+  padding: 1rem;
+}
+.container .intro p:last-child {
+  padding: 2rem;
+}
 .container .instructionSteps {
   padding: 0 0.5rem;
 }
-/************ Slideshow container *****************/
-#slider,
-.wrap,
-.slide-content {
+.container .instructionSteps p {
+  padding: 1rem;
+}
+.container #slider,
+.container .wrap,
+.container .slide-content {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -641,41 +681,41 @@ a {
   height: 214px;
   overflow-x: hidden;
 }
-.wrap {
+.container .wrap {
   position: relative;
 }
-.slide {
+.container .slide {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.slide1 {
+.container .slide1 {
   background-image: url('../images/crochetBabyYoda01.png');
 }
-.slide2 {
+.container .slide2 {
   background-image: url('../images/crochetBabyYoda02.png');
 }
-.slide3 {
+.container .slide3 {
   background-image: url('../images/crochetBabyYoda03.png');
 }
-.arrow {
+.container .arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-top: -35px;
+  margin-top: -15px;
   width: 0;
   height: 0;
   border-style: solid;
 }
-#arrow-left {
-  border-width: 30px 40px 30px 0;
+.container #arrow-left {
+  border-width: 10px 20px 10px 0;
   left: 0;
-  margin-left: 30px;
-  border-color: transparent white transparent transparent;
+  margin-left: 20px;
+  border-color: transparent #36827E transparent transparent;
 }
-#arrow-right {
-  border-width: 30px 0 30px 40px;
+.container #arrow-right {
+  border-width: 10px 0 10px 20px;
   right: 0;
-  margin-right: 30px;
-  border-color: transparent transparent transparent white;
+  margin-right: 20px;
+  border-color: transparent transparent transparent #36827E;
 }
