@@ -174,20 +174,21 @@ table {
 }
 .container .welcome {
   background-color: #F1F9F9;
-  padding-bottom: 0.8rem;
+  padding-bottom: 1rem;
+  font-size: 1.44rem;
 }
 .container .welcome h1 {
-  font-size: 2.24rem;
+  font-size: 3.52rem;
   font-style: bold;
   color: #2A4565;
-  padding: 2rem;
+  padding: 4rem;
 }
 .container .welcome .headline {
   color: #2A4565;
   margin: 0 2rem 2rem 2rem;
 }
 .container .welcome p:last-child {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .container .welcome .button {
   padding: 0.5rem 0;
@@ -204,7 +205,8 @@ table {
   margin-bottom: 0.5rem;
 }
 .container .search {
-  padding: 1rem;
+  font-size: 1.44rem;
+  padding: 1.5rem;
   background-color: #36827E;
   color: #E6EDF4;
 }
@@ -215,7 +217,7 @@ table {
   margin: 0.5rem;
 }
 .container .search p:last-child {
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-left: 40%;
 }
 .container .creatorStudio {
@@ -224,24 +226,26 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   color: #2A4565;
-  padding: 2rem 1rem;
+  padding: 6rem 2rem;
+  font-size: 1.44rem;
 }
 .container .creatorStudio h1 {
-  font-size: 2.56rem;
-  font-style: normal;
-  margin: 2rem 0 1rem 0;
+  font-size: 3.52rem;
+  font-style: bold;
+  margin: 1rem 0 1rem 0;
 }
 .container .draft {
   background-image: url("../images/LG-Draft-Article-Icon.png");
   background-color: #275E5B;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
   color: #fff;
+  font-size: 1.44rem;
 }
 .container .draft h1 {
-  font-size: 2.56rem;
-  font-style: normal;
+  font-size: 3.52rem;
+  font-style: bold;
   margin: 2rem 0 1rem 0;
 }
 .container .draft p {
@@ -258,8 +262,9 @@ table {
   padding: 1rem;
 }
 .container .macroSearch .criteria h1 {
-  width: 10rem;
-  padding: 0.5rem;
+  font-size: 1.92rem;
+  font-style: normal;
+  padding: 1rem;
 }
 .container .macroSearch .criteria .active {
   background-color: #FDBA77;
