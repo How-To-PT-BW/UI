@@ -166,61 +166,51 @@ table {
 .container .welcome p {
   padding: 0.5rem;
 }
-h1 {
-  font-size: 3.52rem;
-  font-style: bold;
-}
-a {
-  text-decoration: none;
-}
 header {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column-reverse wrap;
   justify-content: center;
   align-items: center;
-  width: 75%;
-  margin: 1% auto;
+  width: 100%;
 }
 header .company {
   width: 35%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  margin-top: 38px;
 }
 header .company img {
   width: 25%;
   margin: 1%;
 }
 header .company h1 {
-  margin: 10%;
+  margin: 10% 0% 0% 0%;
 }
 header nav {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #2A4565;
+  position: fixed;
+  top: 0;
 }
 header nav a {
   font-size: 1.8rem;
-  color: #36827E;
-  padding: 12px 14px !important;
-  border: 1px solid #36827E;
-  background-color: #4989AE;
   color: #F1F9F9;
-  border-radius: 10px;
-  width: auto;
-  margin: 0;
+  margin: 10px;
 }
 @media screen and (max-width: 1000px) {
   header {
-    display: flex;
-    flex-flow: column wrap;
-    width: 85%;
+    width: 100%;
   }
-  header .company h1 {
-    margin-left: 20%;
+  header .company {
+    margin-top: 60px;
   }
   header nav {
     width: 100%;
+    justify-content: center;
   }
   header nav a {
     margin: 2%;
@@ -228,7 +218,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   header {
-    width: 90%;
+    width: 100%;
   }
   header .company {
     flex-flow: column;
@@ -240,11 +230,18 @@ header nav a {
     width: 50%;
   }
   header nav {
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 7%;
   }
+}
+h1 {
+  font-size: 3.52rem;
+  font-style: bold;
+}
+a {
+  text-decoration: none;
 }
 .title {
   display: flex;
@@ -375,7 +372,6 @@ a {
 }
 @media screen and (max-width: 1000px) {
   .dev {
-    border: 1px solid red;
     width: 85%;
   }
 }
@@ -430,8 +426,7 @@ a {
   padding: 1%;
 }
 .contact {
-  border: 1px solid red;
-  width: 75%;
+  width: 70%;
   margin: auto;
 }
 .contact h4 {
@@ -439,4 +434,14 @@ a {
 }
 .contact p {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 1000px) {
+  .contact {
+    width: 82.5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    width: 70%;
+  }
 }
