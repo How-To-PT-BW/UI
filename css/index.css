@@ -311,9 +311,19 @@ table {
   position: absolute;
   right: 88%;
 }
+@media (min-width: 1025px) {
+  .container footer #studioIcon {
+    right: 68%;
+  }
+}
 .container footer #draftIcon {
   position: absolute;
   left: 88%;
+}
+@media (min-width: 1025px) {
+  .container footer #draftIcon {
+    left: 68%;
+  }
 }
 header {
   display: flex;
