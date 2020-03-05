@@ -653,6 +653,11 @@ a {
     margin: 0 8rem;
   }
 }
+@media (min-width: 1025px) {
+  .container p {
+    margin: 0 25rem;
+  }
+}
 .container .intro {
   padding: 0 0.5rem;
 }
@@ -668,6 +673,12 @@ a {
     right: 68%;
   }
 }
+@media (min-width: 1025px) {
+  .container .intro #leftIcon {
+    width: 3%;
+    right: 60%;
+  }
+}
 .container .intro #rightIcon {
   width: 10%;
   height: auto;
@@ -678,6 +689,12 @@ a {
   .container .intro #rightIcon {
     width: 5%;
     left: 68%;
+  }
+}
+@media (min-width: 1025px) {
+  .container .intro #rightIcon {
+    width: 3%;
+    left: 60%;
   }
 }
 .container .intro h1 {
@@ -703,6 +720,11 @@ a {
 @media (min-width: 501px) and (max-width: 1024px) {
   .container .instructionSteps #progressBar1 {
     width: 35%;
+  }
+}
+@media (min-width: 1025px) {
+  .container .instructionSteps #progressBar1 {
+    width: 20%;
   }
 }
 .container .instructionSteps #afterCarousel {
@@ -738,6 +760,15 @@ a {
   .container .slide-content {
     width: 75%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .container #slider,
+  .container .wrap,
+  .container .slide-content {
+    width: 65%;
+    margin: 0 auto;
+    height: 40rem;
   }
 }
 .container .wrap {
