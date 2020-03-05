@@ -11,10 +11,16 @@
     <body>
         <header>
             <h1>How-To</h1>
-            <nav></nav>
+            <nav class="otherNav">
+              <a href="home-page.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="babyYoda.html">Baby Yoda Example</a>
+            </nav>
         </header>
             <section class="intro">
-                <img src="images/onePageIcon.png" alt="Picture of a 1 with up and down arrows"><h1>Crochet a Baby Yoda</h1><img src="images/printIcon.png" alt="Illustration of a printer">
+                <img src="images/onePageIcon.png" id = "leftIcon" alt="Picture of a 1 with up and down arrows"><img src="images/printIcon.png" id = "rightIcon" alt="Illustration of a printer">
+                <h1>Crochet a Baby Yoda</h1>
                 <p>Problem: Official dolls of "The Child" won't be available until Spring 2020, and your kid (or you) need one now.</p>
                 <p>Solution: Follow the below steps and the attached pattern to make a little 50-year old treasure of your own.</p>
                 <p>I have spoken.</p>
@@ -22,9 +28,10 @@
             <section class="instructionSteps">
                 <section class="step1">
                     <h1>Step One:<br>Body</h1>
+                    <img src="images/progressBar1.png" id="progressBar1" alt="Progress Bar. Step 1 or 4">
 
                     <div class="wrap">
-                        <div id="arrow-left" class="arrow"></div>
+                        <div id="arrow-left" class="arrow round">&#9664</div>
                         <div id="slider">
                           
                           <div class="slide slide1">
@@ -43,16 +50,17 @@
                           </div><!-- slide3 -->
                           
                         </div><!-- slider -->
-                        <div id="arrow-right" class="arrow"></div>
+                        <div id="arrow-right" class="arrow round">&#9654</div>
                       </div>
 
-
-                    <p>There are plenty of different ways you could hold a crochet hook and yarn, but most of the time, crocheters fall into either of two groups: the pencil grippers and the knife grippers. Learn how each method works, as well as how to hold a Tunisian crochet hook.</p> 
-                    <p>As you try out these grips, keep in mind that these are only the most common ways of working. There are lots of possibilities and variations, so if they don't work for you, keep trying different things to see what's most comfortable for you.</p>
-                    <p>When you hold your crochet hook in much the same way you'd hold a pencil or pen, it's called the "pencil grip." The pencil grip gives you the same type of control as you would have when writing with a pencil or pen, or when painting with a paintbrush.</p>
-                    <p>In this method, the hook typically works from above and goes down into the stitches.</p> 
+                    <section id = "yodaP">
+                      <p id = "afterCarousel">There are plenty of different ways you could hold a crochet hook and yarn, but most of the time, crocheters fall into either of two groups: the pencil grippers and the knife grippers. Learn how each method works, as well as how to hold a Tunisian crochet hook.</p> 
+                      <p>As you try out these grips, keep in mind that these are only the most common ways of working. There are lots of possibilities and variations, so if they don't work for you, keep trying different things to see what's most comfortable for you.</p>
+                      <p>When you hold your crochet hook in much the same way you'd hold a pencil or pen, it's called the "pencil grip." The pencil grip gives you the same type of control as you would have when writing with a pencil or pen, or when painting with a paintbrush.</p>
+                      <p>In this method, the hook typically works from above and goes down into the stitches.</p> 
+                  </section>
                 </section>
-                <button>Next Step</button>
+                <div class = "button">Next Step</div>
             </section>
 
         <script>
@@ -109,11 +117,12 @@
             startSlide();
               
             </script>
+            </div><!--container-->
     </body>
     <footer>
         <img src="images/studioIcon.png" id="studioIcon" alt="Illustration of a desk and desktop"><img src="images/draftArticleIcon.png" id="draftIcon" alt="Illustration of a calligraphy pen point">
         <h1>HOW TO: LAND A DRONE</h1>
         <p>Featured Article</p>
     </footer>
-</div><!--container-->
+
 </html>
