@@ -207,6 +207,11 @@ table {
   vertical-align: middle;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 501px) and (max-width: 1024px) {
+  .container .welcome .button {
+    width: 20%;
+  }
+}
 @media (min-width: 1025px) {
   .container .welcome .button {
     width: 20%;
@@ -223,6 +228,11 @@ table {
   height: 2.5rem;
   border-radius: 10rem;
   margin: 0.5rem;
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .container .search textarea {
+    width: 40%;
+  }
 }
 @media (min-width: 1025px) {
   .container .search textarea {
@@ -289,6 +299,11 @@ table {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0.5rem;
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .container .macroSearch .topics {
+    justify-content: center;
+  }
 }
 @media (min-width: 1025px) {
   .container .macroSearch .topics {
@@ -671,11 +686,6 @@ a {
     margin: 0 8rem;
   }
 }
-@media (min-width: 1025px) {
-  .container p {
-    margin: 0 25rem;
-  }
-}
 .container .intro {
   padding: 0 0.5rem;
 }
@@ -745,6 +755,11 @@ a {
     width: 20%;
   }
 }
+@media (min-width: 1025px) {
+  .container .instructionSteps #yodaP {
+    margin: 0 25rem;
+  }
+}
 .container .instructionSteps #afterCarousel {
   padding-top: 2rem;
 }
@@ -753,7 +768,7 @@ a {
     padding-top: 4rem;
   }
 }
-.container .instructionSteps .button {
+.container .button {
   padding: 0.5rem 0;
   display: flex;
   font-size: 1.44rem;
@@ -768,7 +783,7 @@ a {
   margin: 4rem auto;
 }
 @media (min-width: 1025px) {
-  .container .instructionSteps .button {
+  .container .button {
     width: 20%;
     margin: 4rem auto;
   }
