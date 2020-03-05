@@ -730,6 +730,11 @@ a {
 .container .instructionSteps #afterCarousel {
   padding-top: 2rem;
 }
+@media (min-width: 1025px) {
+  .container .instructionSteps #afterCarousel {
+    padding-top: 4rem;
+  }
+}
 .container .instructionSteps .button {
   padding: 0.5rem 0;
   display: flex;
@@ -743,6 +748,12 @@ a {
   background-color: #F1F9F9;
   vertical-align: middle;
   margin: 1rem auto;
+}
+@media (min-width: 1025px) {
+  .container .instructionSteps .button {
+    width: 20%;
+    margin: 4rem auto;
+  }
 }
 .container #slider,
 .container .wrap,
