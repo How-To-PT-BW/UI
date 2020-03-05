@@ -282,7 +282,7 @@ table {
 }
 .container .macroSearch .topics .searchBoxes {
   width: calc(50% - 1.2em);
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 1rem 0 1rem 0;
 }
 .container .macroSearch .topics .searchBoxes p {
   font-size: 13px;
@@ -671,6 +671,27 @@ a {
 .container .instructionSteps p {
   padding: 1rem;
 }
+.container .instructionSteps #progressBar1 {
+  width: 75%;
+  margin: 2.5rem 0;
+}
+.container .instructionSteps #afterCarousel {
+  padding-top: 2rem;
+}
+.container .instructionSteps .button {
+  padding: 0.5rem 0;
+  display: flex;
+  font-size: 1.44rem;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  height: 3rem;
+  border-radius: 10rem;
+  color: #2A4565;
+  background-color: #F1F9F9;
+  vertical-align: middle;
+  margin: 1rem auto;
+}
 .container #slider,
 .container .wrap,
 .container .slide-content {
@@ -699,23 +720,25 @@ a {
   background-image: url('../images/crochetBabyYoda03.png');
 }
 .container .arrow {
+  display: inline-block;
   cursor: pointer;
   position: absolute;
   top: 50%;
   margin-top: -15px;
   width: 0;
   height: 0;
-  border-style: solid;
 }
 .container #arrow-left {
-  border-width: 10px 20px 10px 0;
+  font-size: 1.76rem;
+  font-style: bold;
+  color: #FDBA77;
   left: 0;
   margin-left: 20px;
-  border-color: transparent #36827E transparent transparent;
 }
 .container #arrow-right {
-  border-width: 10px 0 10px 20px;
+  font-size: 1.76rem;
+  font-style: bold;
+  color: #FDBA77;
   right: 0;
   margin-right: 20px;
-  border-color: transparent transparent transparent #36827E;
 }
