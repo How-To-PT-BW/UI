@@ -198,6 +198,13 @@ table {
 .container .welcome p:last-child {
   font-size: 1rem;
 }
+.container .welcome a {
+  color: white;
+  text-decoration: none;
+}
+.container .welcome a:visited {
+  color: white;
+}
 .container .welcome .button {
   padding: 0.5rem 0;
   display: flex;
